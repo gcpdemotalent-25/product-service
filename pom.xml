@@ -35,6 +35,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.google.cloud.sql</groupId>
+            <artifactId>mysql-socket-factory-connector-j-8</artifactId>
+            <!-- La version peut changer, vérifiez la dernière sur Maven Central -->
+            <version>1.11.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
