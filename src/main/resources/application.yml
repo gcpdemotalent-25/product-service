@@ -1,0 +1,16 @@
+# Configuration du serveur
+# Le port est géré par Cloud Run, donc pas besoin de le définir ici
+
+# Configuration de la source de données
+spring:
+  datasource:
+    # Le mot de passe avec '@' ne posera aucun problème ici
+    url: jdbc:mysql://google/produit_db?socketFactory=com.google.cloud.sql.mysql.SocketFactory&cloudSqlInstance=gcp-project-20250702:europe-west1:microservices-db
+    username: root
+    password: mi@nDR1s04
+  # Configuration JPA/Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    defer-datasource-initialization: true
