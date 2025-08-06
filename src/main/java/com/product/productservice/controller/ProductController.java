@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/produits")
 // Permet au front-end React d'appeler cette API
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://frontend-app-usut6o4i3q-ew.a.run.app/") //http://localhost:3000
 public class ProductController {
 
     @Autowired
